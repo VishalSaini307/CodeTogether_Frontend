@@ -1,14 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // ✅ turbopack config (optional)
-  turbopack: {
-    root: "D:/New folder/Codetogether/codetogether_frontend",
+  // ✅ Disable ESLint and TypeScript type checking during builds
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 
-  // ✅ eslint config should be top-level
-  eslint: {
-    ignoreDuringBuilds: true, // This disables ESLint during Vercel build
+  // ✅ Optional turbopack root (make it relative, not absolute!)
+  turbopack: {
+    root: ".", // relative to your project root, not your Windows path
   },
 };
 

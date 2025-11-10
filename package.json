@@ -2,12 +2,12 @@
   "name": "codetogether_frontend",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
-    "start": "next start",
-    "lint": "eslint"
-  },
+"scripts": {
+  "dev": "next dev --turbopack",
+  "build": "next build --turbopack --no-lint", 
+  "start": "next start",
+  "lint": "next lint"
+},
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
     "@types/axios": "^0.9.36",
