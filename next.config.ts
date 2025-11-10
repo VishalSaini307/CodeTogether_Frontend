@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+   turbopack: {
+    root: "D:/New folder/Codetogether/codetogether_frontend", 
+  },
 };
 
 export default nextConfig;
